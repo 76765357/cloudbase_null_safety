@@ -33,7 +33,7 @@ class CloudBaseRequest {
         contentType: 'application/json',
         responseType: ResponseType.json,
         queryParameters: {'env': _core.config.envId},
-        sendTimeout: timeout));
+        sendTimeout: Duration(milliseconds: timeout!)));
   }
 
   /// 发送请求，携带 accessToken
